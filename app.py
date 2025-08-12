@@ -3,6 +3,8 @@ import requests
 
 app = Flask(__name__)
 
+# GitHub API URL to fetch user gists
+
 GITHUB_API_URL = "https://api.github.com/users/{}/gists"
 
 @app.route("/<username>", methods=["GET"])
